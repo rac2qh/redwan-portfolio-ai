@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const words = ["entrepreneur", "philanthropist", "engineer"];
+const words = ["engineer", "content creator", "philanthropist", "reader", "investor"];
 
 export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -35,12 +35,12 @@ export default function Home() {
 
   return (
     <section className="flex flex-col items-center justify-center text-center h-[calc(100vh-5rem)] px-4">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-100">
         Hello, I'm Redwan — ask me anything.
       </h1>
-      <p className="text-xl text-yellow-400">
+      <p className="text-2xl font-medium text-blue-400">
         <span>{displayedText}</span>
-        <span className="border-r-2 border-yellow-400 animate-pulse ml-1" />
+        <span className="border-r-2 border-blue-400 animate-pulse ml-1" />
       </p>
     </section>
   );
