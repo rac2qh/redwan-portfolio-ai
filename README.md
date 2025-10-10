@@ -1,3 +1,8 @@
+## v1.1.0 – October 10, 2025
+- Added dark/light mode toggle
+- UI refinements (More button, spacing fixes)
+- Stability improvements across layout and globals
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
