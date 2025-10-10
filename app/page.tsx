@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const words = ["engineer", "content creator", "philanthropist", "reader", "investor"];
 
@@ -11,6 +12,18 @@ export default function Home() {
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayedText, setDisplayedText] = useState("");
+
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const toggleTheme = () => setIsDarkMode((prev) => !prev);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isDarkMode) {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   useEffect(() => {
     const currentWord = words[currentWordIndex];
@@ -36,40 +49,47 @@ export default function Home() {
   }, [currentLetterIndex, isDeleting, currentWordIndex]);
 
   return (
-  <section className="relative flex flex-col items-center justify-center text-center min-h-screen px-4 pt-20">
-    {/* GitHub Icon */}
-    <Link
-      href="https://github.com/rac2qh"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="absolute top-6 right-6 text-white hover:text-blue-400 transition"
-    >
-      <FaGithub size={28} />
-    </Link>
+    <section className="relative flex flex-col items-center justify-center text-center min-h-screen px-4 pt-20">
+      {/* Top-right controls */}
+      <div className="absolute top-6 right-6 flex items-center gap-4">
+        <Link
+          href="https://github.com/rac2qh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-blue-400 transition"
+        >
+          <FaGithub size={24} />
+        </Link>
+        <button
+          onClick={toggleTheme}
+          className="text-white hover:text-blue-400 transition"
+          aria-label="Toggle dark/light mode"
+        >
+          {isDarkMode ? <BsSun size={20} /> : <BsMoon size={20} />}
+        </button>
+      </div>
 
-    {/* Header */}
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">
-      Hello, I'm Redwan — ask me anything.
-    </h1>
+      {/* Header */}
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        Hello, I'm Redwan — ask me anything.
+      </h1>
 
-    {/* Typewriter */}
-    <p className="text-xl text-blue-400">
-      <span>{displayedText}</span>
-      <span className="border-r-2 border-blue-400 animate-pulse ml-1" />
-    </p>
+      {/* Typewriter */}
+      <p className="text-xl text-blue-400">
+        <span>{displayedText}</span>
+        <span className="border-r-2 border-blue-400 animate-pulse ml-1" />
+      </p>
 
-    {/* Nav Buttons */}
-    <div className="mt-20 flex flex-wrap gap-4 justify-center">
-      <NavButton href="/experience" emoji="💼" label="Experience" />
-      <NavButton href="/projects" emoji="🚀" label="Projects" />
-      <NavButton href="/skills" emoji="⚡" label="Skills" />
-      <NavButton href="/contact" emoji="📇" label="Contact" />
-      <NavButton href="/more" emoji="➕" label="More" />
-
-    </div>
-  </section>
-);
-
+      {/* Nav Buttons */}
+      <div className="mt-20 flex flex-wrap gap-4 justify-center">
+        <NavButton href="/experience" emoji="💼" label="Experience" />
+        <NavButton href="/projects" emoji="🚀" label="Projects" />
+        <NavButton href="/skills" emoji="⚡" label="Skills" />
+        <NavButton href="/contact" emoji="📇" label="Contact" />
+        <NavButton href="/more" emoji="➕" label="More" />
+      </div>
+    </section>
+  );
 }
 
 // NavButton component
