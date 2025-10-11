@@ -85,7 +85,7 @@ export default function Home() {
         <NavButton href="/experience" emoji="💼" label="Experience" />
         <NavButton href="/projects" emoji="🚀" label="Projects" />
         <NavButton href="/certs&skills" emoji="⚡" label="Certs & Skills" />
-        <NavButton href="/contact" emoji="📇" label="Contact" />
+        <NavButton href="/contact-me" emoji="📇" label="Contact" />
         <NavButton href="/more" emoji="➕" label="More" />
       </div>
     </section>
