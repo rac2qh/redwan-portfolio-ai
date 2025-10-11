@@ -1,14 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdComputer } from "react-icons/md";
 import { FaPaintBrush } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 
 export default function ExperiencePage() {
   const timeline = [
     {
-      title: "Technical Support Engineer – Dean and Company",
+      title: "IT Support Engineer – Dean and Company",
       date: "Feb 2023 – Present",
       description:
-        "Due to an NDA, I cannot include details. Please download my resume below for more details.",
+        "Due to an NDA, I cannot include details. Please click 'Download Resume' button above.",
       icon: <MdComputer size={24} className="text-blue-400" />,
     },
     {
@@ -37,18 +39,30 @@ export default function ExperiencePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-950 to-black">
       <section className="max-w-4xl mx-auto px-6 py-24">
-        <h1 className="text-5xl font-bold mb-12 text-white tracking-tight text-center">
+        <h1 className="text-5xl font-bold mb-6 text-white tracking-tight text-center">
           Experience
         </h1>
 
-        <div className="space-y-10 border-l border-gray-800 pl-6">
+        {/* Download Résumé Button */}
+        <div className="flex justify-center mb-12">
+          <Link
+            href="/ChowdhuryRedwanResume.pdf"
+            download
+            className="flex items-center gap-2 px-5 py-2 rounded-lg border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition font-semibold"
+          >
+            <HiDownload className="text-xl" />
+            Download Resume
+          </Link>
+        </div>
+
+        {/* Timeline */}
+        <div className="space-y-10 border-l border-gray-700 pl-6">
           {timeline.map((item, idx) => (
             <div
               key={idx}
               className="relative group transition-transform duration-300 hover:scale-[1.015] hover:shadow-lg hover:shadow-blue-500/10 rounded-md pl-4 pr-4 py-4 bg-gray-900/40 backdrop-blur-md"
             >
-              {/* Animated timeline dot */}
-              <div className="absolute -left-[12px] top-5 w-3 h-3 bg-blue-500 rounded-full border border-gray-800 animate-pulse" />
+              <div className="absolute -left-[12px] top-5 w-3 h-3 bg-blue-500 rounded-full border border-gray-700 animate-pulse" />
 
               <div className="flex items-center gap-3 mb-1">
                 {item.icon && <span>{item.icon}</span>}
@@ -61,7 +75,7 @@ export default function ExperiencePage() {
                     className="rounded"
                   />
                 )}
-                <h2 className="text-xl font-semibold text-gray-200 group-hover:text-blue-400 transition-colors duration-200">
+                <h2 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-200">
                   {item.title}
                 </h2>
               </div>
