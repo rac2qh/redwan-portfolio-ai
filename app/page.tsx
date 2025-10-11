@@ -84,7 +84,7 @@ export default function Home() {
       <div className="mt-20 flex flex-wrap gap-4 justify-center">
         <NavButton href="/experience" emoji="💼" label="Experience" />
         <NavButton href="/projects" emoji="🚀" label="Projects" />
-        <NavButton href="/skills" emoji="⚡" label="Skills" />
+        <NavButton href="/certs&skills" emoji="⚡" label="Certs & Skills" />
         <NavButton href="/contact" emoji="📇" label="Contact" />
         <NavButton href="/more" emoji="➕" label="More" />
       </div>
