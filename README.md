@@ -1,41 +1,47 @@
-## v1.1.0 – October 10, 2025
-- Added dark/light mode toggle
-- UI refinements (More button, spacing fixes)
-- Stability improvements across layout and globals
+# 🧠 Redwan Chowdhury – Portfolio Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A modern, full-stack personal portfolio built with **Next.js**, **Tailwind CSS**, and a focus on elegant UI, developer experience, and scalability. Includes animated timelines, downloadable résumé, dark/light mode toggle, and pages for projects, skills, certifications, and contact.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Live Demo
+
+🌐 [redwanc.com](https://redwanc.com)  
+📂 [View Repository](https://github.com/rac2qh/redwan-portfolio-ai)
+
+---
+
+## 📌 What's New — `v1.2.0` – October 11, 2025
+
+- ✨ **New Pages**:  
+  - `Experience`: Timeline layout with company logos and animations  
+  - `Projects`: Highlights key apps with icons and hover effects  
+  - `Certs & Skills`: Lists RHCSA & RHCE certs + detailed skills  
+  - `Contact Me`: Includes social icons (YouTube, Instagram, Email, etc.)
+
+- 📝 **Download Résumé** button on Projects and Experience pages  
+- 🌙 **Dark/Light Mode Toggle** (persistent across pages)  
+- 🎨 UI & responsiveness refinements  
+- ⚡ Built with `Next.js App Router`, `Tailwind CSS`, `React Icons`
+
+---
+
+## 🧰 Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Fonts**: [Geist by Vercel](https://vercel.com/font)
+- **Deployment**: [Vercel](https://vercel.com/)
+- **Version Control**: Git & GitHub
+
+---
+
+## 🛠️ Getting Started
+
+To run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
