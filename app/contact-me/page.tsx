@@ -1,6 +1,5 @@
 import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {

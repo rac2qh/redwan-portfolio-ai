@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MdComputer } from "react-icons/md";
 import { HiDownload } from "react-icons/hi";
 
 export default function CertsSkillsPage() {

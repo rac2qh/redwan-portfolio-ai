@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Header */}
       <h1 className="text-4xl md:text-6xl font-bold mb-4">
-        Hello, I'm Redwan — ask me anything.
+        Hello, I&apos;m Redwan — ask me anything.
       </h1>
 
       {/* Typewriter */}
