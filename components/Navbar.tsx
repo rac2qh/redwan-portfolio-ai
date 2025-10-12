@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// @ts-expect-error
+// @ts-expect-error: clsx types not recognized during build
 import clsx from "clsx";
 
 const navItems = [
