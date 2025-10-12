@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+// @ts-ignore
 import clsx from "clsx";
 
 const navItems = [
