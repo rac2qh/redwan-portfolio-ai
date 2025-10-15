@@ -7,24 +7,24 @@ import { HiDownload } from "react-icons/hi";
 export default function ExperiencePage() {
   const timeline = [
     {
-      title: "IT Support Engineer – Dean and Company",
+      title: "Linux System Administrator – Dean and Company",
       date: "Feb 2023 – Present",
       description:
         "Due to an NDA, I cannot include details. Please click 'Download Resume' button above.",
       icon: <MdComputer size={24} className="text-blue-400" />,
     },
     {
-      title: "Front End Developer – Pikasso Swig",
+      title: "System Administrator – Pikasso Swig",
       date: "May 2021 – Aug 2021",
       description:
-        "Developed and maintained a website for a small business with 1000+ customers alongside 3 engineers using HTML, CSS, JavaScript & GitHub, increasing revenue by 12.5x.",
+        "Developed and maintained a website for a•	Resolved 500+ support tickets using Jira, while building 1,000+ Confluence documentation which streamline troubleshooting for 15+ employees, reducing repeat tickets & improving efficiency. small business with 1000+ customers alongside 3 engineers using HTML, CSS, JavaScript & GitHub, increasing revenue by 12.5x. Collaborated with a team of 3 engineers to develop & maintain a business website for 1,000+ customers using HTML, CSS, & JavaScript, contributing to a 12.5x increase in revenue. Conducted front-end unit & cross-browser testing across 100+ test cases to ensure consistent UI performance & functionality across Chrome, Firefox, & Safari.",
       icon: <FaPaintBrush size={22} className="text-pink-400" />,
     },
     {
-      title: "Library Technician – IT Services at UVA",
+      title: "Junior System Administrator– IT Services at UVA",
       date: "Jan 2020 – May 2020",
       description:
-        "Assisted 500+ staff across 10 libraries and resolved 1500+ tickets using the ServiceNow system. Supported inventory management of 1000+ devices with ITIL practices.",
+        "Resolved 1,500+ tickets via ServiceNow for 500+ staff, covering hardware, software, & access. Managed user access, permissions, & 2FA enrollment for new & exiting employees while maintaining internal device inventory to ensure secure provisioning & accurate asset tracking",
       image: "/uva-logo.png",
     },
     {
