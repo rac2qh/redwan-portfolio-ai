@@ -88,7 +88,7 @@ export default function AncestryTreePage() {
   const [edges, __, onEdgesChange] = useEdgesState(initialEdges);
   const [selectedNode, setSelectedNode] = useState<Node | null>(null);
 
-  const onNodeClick = useCallback((_, node: Node) => {
+  const onNodeClick = useCallback((_ : unknown, node: Node) => {
     setSelectedNode(node);
   }, []);
 
