@@ -104,7 +104,7 @@ export default function AncestryTreePage() {
       >
         <MiniMap />
         <Controls />
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any*/}
         <Background variant={"dots" as any} gap={20} size={1} />
       </ReactFlow>
 
