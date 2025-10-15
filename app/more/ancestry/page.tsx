@@ -104,7 +104,7 @@ export default function AncestryTreePage() {
       >
         <MiniMap />
         <Controls />
-        <Background variant="dots" gap={20} size={1} />
+        <Background variant={"dots" as any} gap={20} size={1} />
       </ReactFlow>
 
       <Dialog open={!!selectedNode} onClose={() => setSelectedNode(null)}>
